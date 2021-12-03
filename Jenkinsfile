@@ -28,13 +28,11 @@ pipeline {
                 // If Maven was able to run the tests, even if some of the test
                 // failed, record the test results and archive the jar file.
                 success {
-                    mail to: 'garci877@cougars.csusm.edu, mendo229@cougars.csusm.edu, ferna185@cougars.csusm.edu',
-                    subject: 'The pipeline succeeded: ('
+                    emailext body: 'The pipeline succeeded.', subject: 'AsteroidsProject Pipeline Success.', to: 'garci877@cougars.csusm.edu, mendo229@cougars.csusm.edu, ferna185@cougars.csusm.edu'
                 }
 
                 failure {
-                    mail to: 'garci877@cougars.csusm.edu, mendo229@cougars.csusm.edu, ferna185@cougars.csusm.edu',
-                    subject: 'The pipeline failed: ('
+                    emailext body: 'The pipeline failed.', subject: 'AsteroidsProject Pipeline Failure.', to: 'garci877@cougars.csusm.edu, mendo229@cougars.csusm.edu, ferna185@cougars.csusm.edu'
                 }
             }
         }
