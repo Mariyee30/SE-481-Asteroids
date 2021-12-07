@@ -160,6 +160,26 @@ public class Player extends Entity {
 	public void setFiringEnabled(boolean state) {
 		this.firingEnabled = state;
 	}
+
+	public boolean getThrusting() {
+		return thrustPressed;
+	}
+
+	public boolean getRotateLeft() {
+		return rotateLeftPressed;
+	}
+
+	public boolean getRotateRight() {
+		return rotateRightPressed;
+	}
+
+	public boolean getFiring() {
+		return firePressed;
+	}
+
+	public boolean getFiringEnabled() {
+		return firingEnabled;
+	}
 	
 	/**
 	 * Resets the player to it's default spawn position, speed, and rotation,
