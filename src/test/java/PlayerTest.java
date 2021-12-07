@@ -1,3 +1,5 @@
+package java;
+
 import com.example.entity.Player;
 import org.junit.After;
 import org.junit.Before;
