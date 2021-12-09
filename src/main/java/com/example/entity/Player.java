@@ -10,7 +10,7 @@ import com.example.WorldPanel;
 import com.example.util.Vector2;
 
 // This is a new comment!
-
+//code
 public class Player extends Entity {
 	
 	private static final double DEFAULT_ROTATION = -Math.PI / 2.0;
