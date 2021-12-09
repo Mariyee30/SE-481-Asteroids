@@ -623,7 +623,7 @@ public class Game extends JFrame {
 	 * @param args Unused command line arguments.
 	 */
 	public static void main(String[] args) {
-		Game game = new Game();
+//		Game game = new Game();
 		game.startGame();
 	}
 
