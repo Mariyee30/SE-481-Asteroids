@@ -21,7 +21,7 @@ public class PlayerTest {
 
     @Test
     public void setThrusting() {
-        player.setThrusting(false);
+        player.setThrusting(true);
         assertTrue(player.getThrusting());
     }
 
